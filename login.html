@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Página Meramente Prática</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="screen" href="stilosrelogio.css">
+        <script src="main0.js"></script>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: rgb(121, 82, 0);
+            }
+            fieldset {
+                display: block;
+                margin: 0 auto;
+                border-radius: 20px;
+                border: 5px solid  rgb(195, 179, 55);
+                height: 96%;
+                width: 800;
+                align-items: center;
+                justify-content: center; 
+
+            }
+            h1{
+                letter-spacing: 4px;
+                color:rgb(7, 7, 6);
+            
+            }
+            #nomelg{ 
+                background-color:rgb(121, 82, 0);
+                color: black;
+                border-radius: 20px;
+                width: 700px;
+                height: 35px;
+                font-weight: bold;
+                text-transform: uppercase;
+            
+            }
+            #senhalg{ 
+                background-color:rgb(121, 82, 0);
+                color: black;
+                border-radius: 20px;
+                width: 700px;
+                height: 35px;
+            
+            }
+            #login{
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(75, 94, 22);
+            margin-bottom: 0 auto;
+            }
+        </style>
+            <div class="centro">
+                <fieldset>
+                    <h1><b>ESCREVA SEU NOME E SUA SENHA</b></h1>
+                    <h1><b>NOME:</b></h1>
+                    <label for="nome"></label>
+                    <input type="text" id="nomelg" name="nomelg"><br><br>
+                    <h1><b>SENHA:</b></h1>
+                    <label for="senha" ></label>
+                    <input type="password" id="senhalg" name="senhalg"><br><br><br><br><br><br><br><br><br><br> 
+                    <button id="login" name="login"><h1><b>LOGIN</b></h1></button>
+                </fieldset>
+            </div>
+    </body>
+    <script>
+    function acesso(){
+        var nome = document.getElementById('nomelg').value;
+        var senha = document.getElementById('senhalg').value;
+        if (nome === "gustavo costa" && senha === "etec@1234") {
+            alert('ACESSO LIBERADO');
+            window.location.href = menudeitens.html 
+        }
+        else {
+            alert('ACESSO NEGADO');
+        }
+        }
+        document.getElementById('login').addEventListener('click', acesso)
+    </script>
+</html>
