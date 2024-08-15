@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de 21</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="game-container">
+      <div id="dealer-hand" class="hand">
+        <h2>Mão do Dealer</h2>
+        <div class="cards"></div>
+      </div>
+      <div id="player-hand" class="hand">
+        <h2>Sua Mão</h2>
+        <div class="cards"></div>
+      </div>
+      <div class="controls">
+        <button id="hit">Pedir Carta</button>
+        <button id="stand">Parar</button>
+        <button id="reset">Reiniciar</button>
+      </div>
+      <div id="message" class="message"></div>
+    </div>
+    <script>
+      const baralho = [
+        "♠️ Ás",
+        "♠️ 2",
+        "♠️ 3",
+        "♠️ 4",
+        "♠️ 5",
+        "♠️ 6",
+        "♠️ 7",
+        "♠️ 8",
+        "♠️ 9",
+        "♠️ 10",
+        "♠️ Valete",
+        "♠️ Dama",
+        "♠️ Rei",
+        "♥️ Ás",
+        "♥️ 2",
+        "♥️ 3",
+        "♥️ 4",
+        "♥️ 5",
+        "♥️ 6",
+        "♥️ 7",
+        "♥️ 8",
+        "♥️ 9",
+        "♥️ 10",
+        "♥️ Valete",
+        "♥️ Dama",
+        "♥️ Rei",
+        "♦️ Ás",
+        "♦️ 2",
+        "♦️ 3",
+        "♦️ 4",
+        "♦️ 5",
+        "♦️ 6",
+        "♦️ 7",
+        "♦️ 8",
+        "♦️ 9",
+        "♦️ 10",
+        "♦️ Valete",
+        "♦️ Dama",
+        "♦️ Rei",
+        "♣️ Ás",
+        "♣️ 2",
+        "♣️ 3",
+        "♣️ 4",
+        "♣️ 5",
+        "♣️ 6",
+        "♣️ 7",
+        "♣️ 8",
+        "♣️ 9",
+        "♣️ 10",
+        "♣️ Valete",
+        "♣️ Dama",
+        "♣️ Rei",
+      ]
+      function sortearCarta() {
+        const indiceAleatorio = parseInt(Math.random() * baralho.length)
+        return baralho[indiceAleatorio]
+      }
+
+      const maoP1 = sortearCarta() + sortearCarta()
+      const maoP2 = sortearCarta() + sortearCarta()
+      document.getElementsByClassName(h2)
+    </script>
+  </body>
+</html>
