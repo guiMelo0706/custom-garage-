@@ -1,1 +1,6 @@
+COLA ESSE COMANDO NO POWERSHELL
+ Test-NetConnection -ComputerName 10.68.101.25 -Port 5500
+
+DEPOIS COLA ESSE IP NO NAVEGADOR
+
 http://127.0.0.1:5500/tcc/guiMelo0706
